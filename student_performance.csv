@@ -1,0 +1,12 @@
+student_id,personality,studying_hours,studying_time,prior_knowledge,learning_style,motivation,interest,study_environment,study_techniques,teacher_quality,personal_circumstances,peer_influence,test_anxiety,resources_access,performance_score
+1,Introverted,4,Evening,High,Visual Learner,Moderate,High,Quiet and Organized,Effective Study Techniques,Good,Supportive Family,Low,Moderate,Adequate,85
+2,Extroverted,6,Morning,Medium,Auditory Learner,High,Moderate,Noisy and Disorganized,Time Management,Average,Financial Difficulties,High,High,Limited,78
+3,Ambivert,5,Afternoon,High,Kinesthetic Learner,High,High,Quiet and Organized,Active Learning Methods,Excellent,Supportive Family,Medium,Low,Adequate,92
+4,Introverted,3,Evening,Low,Visual Learner,Low,Low,Noisy and Disorganized,Ineffective Study Techniques,Poor,Stressful Personal Circumstances,Low,High,Limited,65
+5,Extroverted,7,Morning,High,Auditory Learner,High,High,Quiet and Organized,Time Management,Good,Supportive Family,High,Moderate,Adequate,80
+6,Introverted,5,Afternoon,Medium,Visual Learner,High,Moderate,Quiet and Organized,Effective Study Techniques,Good,Supportive Family,Medium,Moderate,Limited,75
+7,Extroverted,4,Evening,Low,Auditory Learner,Low,Low,Noisy and Disorganized,Ineffective Study Techniques,Poor,Financial Difficulties,Low,High,Limited,62
+8,Ambivert,6,Morning,High,Kinesthetic Learner,High,High,Quiet and Organized,Active Learning Methods,Excellent,Supportive Family,High,Low,Adequate,88
+9,Introverted,3,Afternoon,Low,Visual Learner,Low,Low,Noisy and Disorganized,Ineffective Study Techniques,Poor,Stressful Personal Circumstances,Low,High,Limited,68
+10,Extroverted,5,Evening,Medium,Auditory Learner,Medium,Moderate,Quiet and Organized,Effective Study Techniques,Good,Supportive Family,Medium,Moderate,Limited,72
+11,Introverted,4,Morning,High,Visual Learner,High,High,Quiet and Organized,Effective Study Techniques,Good,Supportive Family,High,Moderate,Adequate,84

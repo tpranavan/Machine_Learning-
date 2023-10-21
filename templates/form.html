@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Form</title>
+</head>
+<body>
+    <h1>Enter Your Information</h1>
+    <form method="POST" action="/">
+        <label for="faculty">Current Interested Faculty:</label>
+        <input type="text" id="faculty" name="faculty" required><br><br>
+
+        <label for="interested_field">Interested Field:</label>
+        <input type="text" id="interested_field" name="interested_field" required><br><br>
+
+        <label for="gpa">GPA:</label>
+        <input type="number" id="gpa" name="gpa" step="0.01" required><br><br>
+
+        <label for="work_experience">Work Experience in Months:</label>
+        <input type="number" id="work_experience" name="work_experience" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

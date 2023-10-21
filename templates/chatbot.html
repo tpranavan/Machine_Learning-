@@ -1,0 +1,116 @@
+{% extends 'Base.html' %}
+
+{% block content %}
+
+
+
+<div class="col-lg-12">
+    <div class="right-content">
+        <div class="row">
+
+                       <div class="section-heading">
+            <h4>ChatBot</h4>
+          </div>
+
+            <div class="col-lg-12">
+
+                    <div class="row">
+
+ <div id="chat-container">
+        <div id="chat-history"></div>
+        <div id="user-input-container">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-button"><i class="fas fa-greater-than-equal"></i> Send </button>
+
+
+        </div>
+        <br/>
+        <button class="active"  id="voice-button"><i class="fas fa-microphone"></i> Voice</button>
+    </div>
+
+
+
+                <center>
+                    {% if career_choice_prediction %}
+                    <br>
+                    <h2>Prediction Result</h2> <br> <br>
+                    <p>Predicted Career Choice: {{ career_choice_prediction }}</p>
+                    <p>Predicted Job Position: {{ position_prediction }}</p>
+                    <p>Predicted TopUp Course: {{ topup_prediction }}</p>
+                    {% endif %}
+                </center>
+            </div>
+        </div>
+    </div>
+</div>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webkitSpeechRecognition/1.0.27/webkitSpeechRecognition.js"></script>
+    <script>
+$(document).ready(function() {
+    let recognition = null;
+
+    // Function to handle voice input
+    function startVoiceRecognition() {
+        if (recognition) {
+            recognition.stop();
+        }
+
+        recognition = new webkitSpeechRecognition();
+        recognition.continuous = true;
+        recognition.interimResults = false;
+
+        recognition.onstart = function() {
+            console.log("Voice recognition started...");
+        };
+
+        recognition.onresult = function(event) {
+            const result = event.results[0][0].transcript;
+            $("#user-input").val(result);
+        };
+
+        recognition.onerror = function(event) {
+            console.error("Voice recognition error: " + event.error);
+        };
+
+        recognition.onend = function() {
+            console.log("Voice recognition ended.");
+        };
+
+        recognition.start();
+    }
+
+    // Handle voice button click
+    $("#voice-button").click(function() {
+        startVoiceRecognition();
+    });
+
+    // Handle send button click
+    $("#send-button").click(function() {
+        const userMessage = $("#user-input").val();
+        sendMessage(userMessage);
+    });
+
+    // Function to send a message (either text or voice)
+    function sendMessage(message) {
+        $("#chat-history").append("<div class='user-message'><p>You: " + message + "</p></div>");
+        $("#user-input").val("");
+
+        // Scroll to the bottom of the chat history
+        $("#chat-history").scrollTop($("#chat-history")[0].scrollHeight);
+
+        $.ajax({
+            type: "POST",
+            url: "/get_response",
+            data: { user_message: message },
+            success: function(response) {
+                $("#chat-history").append("<div class='bot-message'><p>Bot: " + response.bot_response + "</p></div>");
+
+                // Scroll to the bottom of the chat history
+                $("#chat-history").scrollTop($("#chat-history")[0].scrollHeight);
+            }
+        });
+    }
+});
+
+    </script>
+{% endblock %}

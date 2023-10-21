@@ -1,0 +1,127 @@
+{
+  "intents": [
+    {
+      "tag": "Intro",
+      "patterns": [
+        "hi",
+        "how are you",
+        "is anyone there",
+        "hello",
+        "whats up",
+        "hey",
+        "yo",
+        "listen",
+        "please help me",
+        "i am learner from",
+        "i belong to",
+        "aiml batch",
+        "aifl batch",
+        "i am from",
+        "hey ya",
+        "talking to you for the first time"
+      ],
+      "responses": ["Hi, please ask your questions!"],
+      "context_set": ""
+    },
+    {
+      "tag": "University_General",
+      "patterns": [
+        "Tell me about the university",
+        "What programs does the university offer?",
+        "How can I apply to the university?",
+        "What are the admission requirements?",
+        "Tell me about the tuition fees",
+        "Is there financial aid available?",
+        "What is the campus like?",
+        "Are there any scholarships?",
+        "Tell me about the faculty",
+        "What are the important dates for admissions?",
+        "How can I schedule a campus tour?",
+        "Tell me about student accommodations",
+        "What extracurricular activities are available?",
+        "How can I contact the university?",
+        "Tell me about the university's rankings"
+      ],
+      "responses": [
+        "Our university offers a wide range of programs in various fields.",
+        "To apply, please visit our website and follow the application process.",
+        "Admission requirements vary by program, so please check our website for details.",
+        "Tuition fees depend on the program and your residency status. You can find detailed information on our website.",
+        "We offer various scholarships and financial aid options for eligible students.",
+        "Our campus is known for its modern facilities and beautiful surroundings.",
+        "Yes, we have several scholarships available for students. Please check our website for the latest information.",
+        "Our faculty consists of highly qualified and experienced professors.",
+        "Important admission dates can be found on our website's admissions page.",
+        "To schedule a campus tour, please contact our admissions office.",
+        "We provide a range of accommodation options for students.",
+        "We offer a wide range of extracurricular activities to enhance your university experience.",
+        "You can contact the university through our official email or phone number.",
+        "Our university is ranked among the top institutions in the country."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "University_Location",
+      "patterns": [
+        "Where is the university located?",
+        "What is the address of the university?",
+        "Tell me about the city where the university is located."
+      ],
+      "responses": ["Our university is located in [City Name], [Country]. The address is [University Address]."],
+      "context_set": ""
+    },
+    {
+      "tag": "University_Admissions",
+      "patterns": [
+        "What are the admission deadlines?",
+        "How can I check my admission status?",
+        "Tell me about the application process.",
+        "What documents are required for admission?"
+      ],
+      "responses": [
+        "The admission deadlines vary by program. Please check our website for specific dates.",
+        "You can check your admission status by logging into your online applicant portal.",
+        "The application process involves filling out an online application form and submitting the required documents.",
+        "The documents required for admission typically include your transcripts, letters of recommendation, and a personal statement. Specific requirements may vary by program."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "University_FinancialAid",
+      "patterns": [
+        "What types of financial aid are available?",
+        "How can I apply for scholarships?",
+        "Tell me about work-study programs."
+      ],
+      "responses": [
+        "We offer scholarships, grants, and work-study programs to assist students financially.",
+        "You can apply for scholarships by submitting a scholarship application form available on our website.",
+        "Work-study programs provide opportunities for students to work part-time jobs on campus to help cover their expenses."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "Exit",
+      "patterns": [
+        "thank you",
+        "thanks",
+        "bye",
+        "see you",
+        "later",
+        "see you later",
+        "goodbye",
+        "i am leaving",
+        "have a Good day",
+        "you helped me",
+        "thanks a lot",
+        "thanks a ton",
+        "you are the best",
+        "great help",
+        "too good",
+        "you are a good learning buddy"
+      ],
+      "responses": ["I hope I was able to assist you. Goodbye!"],
+      "context_set": ""
+    }
+  ]
+}

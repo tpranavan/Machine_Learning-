@@ -1,0 +1,308 @@
+{% extends 'Base.html' %}
+
+{% block content %}
+<div class="col-lg-12">
+    <div class="right-content">
+        <div class="row">
+            <div class="col-lg-12">
+                <form id="contact-form" action="" method="post">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <fieldset>
+                                <label for="interested_area">Interested Area:</label>
+                               <select name="interested_area" id="interested_area" required>
+                                    <option value="">Select Interested Area</option>
+<option value="Networking">Networking</option>
+<option value="Computational  Theory">Computational  Theory</option>
+<option value="Programming">Programming</option>
+<option value="Analytics">Analytics</option>
+<option value="Systems">Systems</option>
+<option value="Cyber">Cyber</option>
+<option value="IT">IT</option>
+<option value="Multimedia">Multimedia</option>
+<option value="Business">Business</option>
+                                    <!--  more options if needed -->
+                                </select>
+                            </fieldset>
+                        </div>
+<!--                        <div class="col-lg-6">-->
+<!--                            <fieldset>-->
+<!--                                <label for="programming">Programming:</label>-->
+<!--                                  <input type="range" name="programming" id="programming" min="0" max="10" step="1" required>-->
+<!--                                    <output for="programming" id="programming-output">0</output>-->
+<!--          </fieldset>-->
+<!--                        </div>-->
+<!--                                <script>-->
+<!--    const programmingSlider = document.getElementById("programming");-->
+<!--    const programmingOutput = document.getElementById("programming-output");-->
+<!--    programmingSlider.addEventListener("input", function() {-->
+<!--        programmingOutput.textContent = this.value;-->
+<!--    });-->
+<!--</script>-->
+
+                        <div class="col-lg-6">
+    <fieldset>
+        <label for="programming">Programming:</label>
+        <input type="range" name="programming" id="programming" min="0" max="10" step="1" required>
+        <output for="programming" id="programming-output">0</output>
+    </fieldset>
+</div>
+
+
+<script>
+    const programmingSlider = document.getElementById("programming");
+    const programmingOutput = document.getElementById("programming-output");
+    programmingSlider.addEventListener("input", function() {
+        programmingOutput.textContent = this.value;
+    });
+</script>
+
+
+                        <div class="col-lg-6">
+                            <fieldset>
+                                <label for="web">Web:</label>
+                                  <input type="range" name="web" id="web" min="0" max="10" step="1" required>
+                                    <output for="web" id="web-output">0</output>
+          </fieldset>
+                        </div>
+                                <script>
+    const webSlider = document.getElementById("web");
+    const webOutput = document.getElementById("web-output");
+    webSlider.addEventListener("input", function() {
+        webOutput.textContent = this.value;
+    });
+</script>
+
+                                                <div class="col-lg-6">
+                            <fieldset>
+                                <label for="mobile">Mobile:</label>
+                                  <input type="range" name="mobile" id="mobile" min="0" max="10" step="1" required>
+                                    <output for="mobile" id="mobile-output">0</output>
+          </fieldset>
+                        </div>
+                                <script>
+    const mobileSlider = document.getElementById("mobile");
+    const mobileOutput = document.getElementById("mobile-output");
+    mobileSlider.addEventListener("input", function() {
+        mobileOutput.textContent = this.value;
+    });
+</script>
+
+                                                <div class="col-lg-6">
+                            <fieldset>
+                                <label for="software">software:</label>
+                                  <input type="range" name="software" id="software" min="0" max="10" step="1" required>
+                                    <output for="software" id="software-output">0</output>
+          </fieldset>
+                        </div>
+                                <script>
+    const softwareSlider = document.getElementById("software");
+    const softwareOutput = document.getElementById("software-output");
+    softwareSlider.addEventListener("input", function() {
+        softwareOutput.textContent = this.value;
+    });
+</script>
+
+                                                <div class="col-lg-6">
+                            <fieldset>
+                                <label for="linux">linux:</label>
+                                  <input type="range" name="linux" id="linux" min="0" max="10" step="1" required>
+                                    <output for="linux" id="linux-output">0</output>
+          </fieldset>
+                        </div>
+                                <script>
+    const linuxSlider = document.getElementById("linux");
+    const linuxOutput = document.getElementById("linux-output");
+    linuxSlider.addEventListener("input", function() {
+        linuxOutput.textContent = this.value;
+    });
+</script>
+
+                                                <div class="col-lg-6">
+                            <fieldset>
+                                <label for="uml">uml:</label>
+                                  <input type="range" name="uml" id="uml" min="0" max="10" step="1" required>
+                                    <output for="uml" id="uml-output">0</output>
+          </fieldset>
+                        </div>
+                                <script>
+    const umlSlider = document.getElementById("uml");
+    const umlOutput = document.getElementById("uml-output");
+    umlSlider.addEventListener("input", function() {
+        umlOutput.textContent = this.value;
+    });
+</script>
+
+                                                <div class="col-lg-6">
+                            <fieldset>
+                                <label for="ui">ui:</label>
+                                  <input type="range" name="ui" id="ui" min="0" max="10" step="1" required>
+                                    <output for="ui" id="ui-output">0</output>
+          </fieldset>
+                        </div>
+                                <script>
+    const uiSlider = document.getElementById("ui");
+    const uiOutput = document.getElementById("ui-output");
+    uiSlider.addEventListener("input", function() {
+        uiOutput.textContent = this.value;
+    });
+</script>
+
+                                                <div class="col-lg-6">
+                            <fieldset>
+                                <label for="network">network:</label>
+                                  <input type="range" name="network" id="network" min="0" max="10" step="1" required>
+                                    <output for="network" id="network-output">0</output>
+          </fieldset>
+                        </div>
+                                <script>
+    const networkSlider = document.getElementById("network");
+    const networkOutput = document.getElementById("network-output");
+    networkSlider.addEventListener("input", function() {
+        networkOutput.textContent = this.value;
+    });
+</script>
+
+                                                <div class="col-lg-6">
+                            <fieldset>
+                                <label for="security">security:</label>
+                                  <input type="range" name="security" id="security" min="0" max="10" step="1" required>
+                                    <output for="security" id="security-output">0</output>
+          </fieldset>
+                        </div>
+                                <script>
+    const securitySlider = document.getElementById("security");
+    const securityOutput = document.getElementById("security-output");
+    securitySlider.addEventListener("input", function() {
+        securityOutput.textContent = this.value;
+    });
+</script>
+
+                                                <div class="col-lg-6">
+                            <fieldset>
+                                <label for="cloud">cloud:</label>
+                                  <input type="range" name="cloud" id="cloud" min="0" max="10" step="1" required>
+                                    <output for="cloud" id="cloud-output">0</output>
+          </fieldset>
+                        </div>
+                                <script>
+    const cloudSlider = document.getElementById("cloud");
+    const cloudOutput = document.getElementById("cloud-output");
+    cloudSlider.addEventListener("input", function() {
+        cloudOutput.textContent = this.value;
+    });
+</script>
+
+                                                <div class="col-lg-6">
+                            <fieldset>
+                                <label for="big_data">big_data:</label>
+                                  <input type="range" name="big_data" id="big_data" min="0" max="10" step="1" required>
+                                    <output for="big_data" id="big_data-output">0</output>
+          </fieldset>
+                        </div>
+                                <script>
+    const big_dataSlider = document.getElementById("big_data");
+    const big_dataOutput = document.getElementById("big_data-output");
+    big_dataSlider.addEventListener("input", function() {
+        big_dataOutput.textContent = this.value;
+    });
+</script>
+
+                                                <div class="col-lg-6">
+                            <fieldset>
+                                <label for="ml">ML:</label>
+                                  <input type="range" name="ml" id="ml" min="0" max="10" step="1" required>
+                                    <output for="ml" id="ml-output">0</output>
+          </fieldset>
+                        </div>
+                                <script>
+    const MLSlider = document.getElementById("ml");
+    const MLOutput = document.getElementById("ml-output");
+    MLSlider.addEventListener("input", function() {
+        MLOutput.textContent = this.value;
+    });
+</script>
+
+                                                <div class="col-lg-6">
+                            <fieldset>
+                                <label for="mathematics">Mathematics:</label>
+                                  <input type="range" name="mathematics" id="mathematics" min="0" max="10" step="1" required>
+                                    <output for="mathematics" id="mathematics-output">0</output>
+          </fieldset>
+                        </div>
+                                <script>
+    const mathematicsSlider = document.getElementById("mathematics");
+    const mathematicsOutput = document.getElementById("mathematics-output");
+    mathematicsSlider.addEventListener("input", function() {
+        mathematicsOutput.textContent = this.value;
+    });
+</script>
+
+                                                <div class="col-lg-6">
+                            <fieldset>
+                                <label for="statistics">Statistics:</label>
+                                  <input type="range" name="statistics" id="statistics" min="0" max="10" step="1" required>
+                                    <output for="statistics" id="statistics-output">0</output>
+          </fieldset>
+                        </div>
+                                <script>
+    const statisticsSlider = document.getElementById("statistics");
+    const statisticsOutput = document.getElementById("statistics-output");
+    statisticsSlider.addEventListener("input", function() {
+        statisticsOutput.textContent = this.value;
+    });
+</script>
+
+                                                <div class="col-lg-6">
+                            <fieldset>
+                                <label for="support">Support:</label>
+                                  <input type="range" name="support" id="support" min="0" max="10" step="1" required>
+                                    <output for="support" id="support-output">0</output>
+          </fieldset>
+                        </div>
+                                <script>
+    const supportSlider = document.getElementById("support");
+    const supportOutput = document.getElementById("support-output");
+    supportSlider.addEventListener("input", function() {
+        supportOutput.textContent = this.value;
+    });
+</script>
+
+                        <div class="col-lg-12">
+                            <fieldset>
+                                <button type="submit" id="form-submit">Predict</button> &nbsp; &nbsp;
+                                <a href="/" id="form-submit" class="active">Reset</a>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+<center>
+    {% if topup_prediction %}
+    <br>
+    <h2>Prediction Result</h2> <br> <br>
+    <p>Predicted TopUp Course: {{ topup_prediction }}</p>
+    <p>Predicted Career Choice: {{ career_choice_prediction }}</p>
+
+    {% if unique_choices is defined and unique_choices|length > 0 %}
+ <br>
+    <p>Relevant Other Career Choice for {{ topup_prediction }} </p>
+<p>
+    {% for choice in unique_choices %}
+    <p>{{ choice }}</p>
+    {% endfor %}
+</p>
+{% endif %}
+
+    {% endif %}
+
+
+
+
+</center>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

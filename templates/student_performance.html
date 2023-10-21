@@ -1,0 +1,162 @@
+{% extends 'Base.html' %}
+
+{% block content %}
+
+<div class="col-lg-12">
+    <div class="right-content">
+        <div class="row">
+
+                        <div class="section-heading">
+            <h4>Performance Analysis</h4>
+          </div>
+
+            <div class="col-lg-12">
+                        <form action="student_performance" id="contact-form" method="POST">
+                            <div class="row wls-contact-mid">
+                                <div class="col-md-6 col-sm-6 form-group contact-forms">
+                                    <label for="personality">Personality:</label>
+                                    <select name="personality" class="form-control" required>
+                                        <option value="Introverted">Introverted</option>
+                                        <option value="Extroverted">Extroverted</option>
+                                        <option value="Ambivert">Ambivert</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 col-sm-6 form-group contact-forms">
+                                    <label for="studying_hours">Studying Hours:</label>
+                                    <input type="number" name="studying_hours" class="form-control" min="0" required>
+                                </div>
+                            </div>
+                            <div class="row wls-contact-mid">
+                                <div class="col-md-6 col-sm-6 form-group contact-forms">
+                                    <label for="studying_time">Studying Time:</label>
+                                    <select name="studying_time" class="form-control" required>
+                                        <option value="Morning">Morning</option>
+                                        <option value="Afternoon">Afternoon</option>
+                                        <option value="Evening">Evening</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 col-sm-6 form-group contact-forms">
+                                    <label for="prior_knowledge">Prior Knowledge:</label>
+                                    <select name="prior_knowledge" class="form-control" required>
+                                        <option value="Low">Low</option>
+                                        <option value="Medium">Medium</option>
+                                        <option value="High">High</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row wls-contact-mid">
+                                <div class="col-md-6 col-sm-6 form-group contact-forms">
+                                    <label for="learning_style">Learning Style:</label>
+                                    <select name="learning_style" class="form-control" required>
+                                        <option value="Visual Learner">Visual Learner</option>
+                                        <option value="Auditory Learner">Auditory Learner</option>
+                                        <option value="Kinesthetic Learner">Kinesthetic Learner</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 col-sm-6 form-group contact-forms">
+                                    <label for="motivation">Motivation:</label>
+                                    <select name="motivation" class="form-control" required>
+                                        <option value="Low">Low</option>
+                                        <option value="Moderate">Moderate</option>
+                                        <option value="High">High</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row wls-contact-mid">
+                                <div class="col-md-6 col-sm-6 form-group contact-forms">
+                                    <label for="interest">Interest:</label>
+                                    <select name="interest" class="form-control" required>
+                                        <option value="Low">Low</option>
+                                        <option value="Moderate">Moderate</option>
+                                        <option value="High">High</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 col-sm-6 form-group contact-forms">
+                                    <label for="study_environment">Study Environment:</label>
+                                    <select name="study_environment" class="form-control" required>
+                                        <option value="Quiet and Organized">Quiet and Organized</option>
+                                        <option value="Noisy and Disorganized">Noisy and Disorganized</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row wls-contact-mid">
+                                <div class="col-md-6 col-sm-6 form-group contact-forms">
+                                    <label for="study_techniques">Study Techniques:</label>
+                                    <select name="study_techniques" class="form-control" required>
+                                        <option value="Effective Study Techniques">Effective Study Techniques</option>
+                                        <option value="Time Management">Time Management</option>
+                                        <option value="Active Learning Methods">Active Learning Methods</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 col-sm-6 form-group contact-forms">
+                                    <label for="teacher_quality">Teacher Quality:</label>
+                                    <select name="teacher_quality" class="form-control" required>
+                                        <option value="Good">Good</option>
+                                        <option value="Average">Average</option>
+                                        <option value="Excellent">Excellent</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row wls-contact-mid">
+                                <div class="col-md-6 col-sm-6 form-group contact-forms">
+                                    <label for="personal_circumstances">Personal Circumstances:</label>
+                                    <select name="personal_circumstances" class="form-control" required>
+                                        <option value="Supportive Family">Supportive Family</option>
+                                        <option value="Financial Difficulties">Financial Difficulties</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 col-sm-6 form-group contact-forms">
+                                    <label for="peer_influence">Peer Influence:</label>
+                                    <select name="peer_influence" class="form-control" required>
+                                        <option value="Low">Low</option>
+                                        <option value="Medium">Medium</option>
+                                        <option value="High">High</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row wls-contact-mid">
+                                <div class="col-md-6 col-sm-6 form-group contact-forms">
+                                    <label for="test_anxiety">Test Anxiety:</label>
+                                    <select name="test_anxiety" class="form-control" required>
+                                        <option value="Low">Low</option>
+                                        <option value="Moderate">Moderate</option>
+                                        <option value="High">High</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 col-sm-6 form-group contact-forms">
+                                    <label for="resources_access">Resources Access:</label>
+                                    <select name="resources_access" class="form-control" required>
+                                        <option value="Adequate">Adequate</option>
+                                        <option value="Limited">Limited</option>
+                                    </select>
+                                </div>
+
+
+                            </div>
+
+<br/>
+                               <fieldset>
+                                  <button type="submit"  class="active">Predict Performance</button>
+                                      <a   class="active"  href="student_performance">Reset </a>
+                            </fieldset>
+
+
+
+                        </form>
+
+
+
+
+              {% if prediction %}
+                            <br/> <br/> <br/>
+                            <center>
+                                <h2>Predicted Performance Score: {{ prediction }}</h2>
+                            </center>
+                        {% endif %}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
